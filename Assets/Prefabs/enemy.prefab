@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5626141496987509628}
   - component: {fileID: 5626141496987509629}
   - component: {fileID: 8992086247122447944}
+  - component: {fileID: 570175776}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -95,10 +96,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016529322, y: -0.40116262}
+  m_Offset: {x: -0.013148785, y: 0.32443297}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 0.43333334, y: 0, z: 0.46, w: 0}
+    pivot: {x: 0.50719637, y: 0.040299386}
     oldSize: {x: 1.7066667, y: 1.7066667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -106,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3718896, y: 0.19767475}
+  m_Size: {x: 0.4594698, y: 0.7059791}
   m_EdgeRadius: 0
 --- !u!50 &5626141496987509629
 Rigidbody2D:
@@ -148,3 +149,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &570175776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626141496987509570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb2cf38721571146b5ca9551b3c1202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3

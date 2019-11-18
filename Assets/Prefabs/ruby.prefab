@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c50dccb913034429cb29d8d2fed193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 6863674734030530945, guid: 6bce8446d8a7dd54ab6bbdff94d2e966,
+    type: 3}
   speed: 3
   maxHealth: 5
   timeInvincible: 2
@@ -154,7 +156,7 @@ BoxCollider2D:
   m_Offset: {x: -0.0286448, y: -0.51206434}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1.26, y: 1.27}
     adaptiveTilingThreshold: 0.5

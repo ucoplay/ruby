@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     Animator animator;
 
+    bool broken = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!broken) return;
         timer -= Time.deltaTime;
         if (timer < 0) {
             direction = -direction;
@@ -50,5 +53,12 @@ public class EnemyController : MonoBehaviour
         if (rubyController!=null) {
             rubyController.ChangeHealth(-1);
         }
+    }
+
+    public void Fix()
+    {
+        broken = false;
+        rigBody2D.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
