@@ -570,6 +570,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -590,10 +591,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 29a65791-c8dc-4c7c-988a-85d10a8431ac
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: ruby
+  organizationId: wechat_os_qy0x2zrnxdahlh2rvhf36accs
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

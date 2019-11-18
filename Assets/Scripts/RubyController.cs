@@ -40,7 +40,7 @@ public class RubyController : MonoBehaviour
         //Debug.Log(horizontal);
         Vector2 vector = rdbody2D.position;
         //vector.x += speed * horizontal*Time.deltaTime;
-       // vector.y += speed * vertical*Time.deltaTime;
+        //vector.y += speed * vertical*Time.deltaTime;
         vector += move * speed * Time.deltaTime;
         //transform.position = vector;
         rdbody2D.MovePosition(vector);
