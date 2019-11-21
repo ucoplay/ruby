@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\HealthCollectible.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\RubyController.cs" />
+    <Compile Include="Assets\Scripts\UIHealthBar.cs" />
     <Reference Include="Cinemachine">
       <HintPath>D:/game/ruby/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
