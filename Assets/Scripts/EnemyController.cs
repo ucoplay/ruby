@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
     public ParticleSystem smokeEffect;
+    public AudioClip fixedClip;
+    AudioSource audioSource;
 
     Rigidbody2D rigBody2D;
     float timer;
@@ -23,6 +25,7 @@ public class EnemyController : MonoBehaviour
         rigBody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,6 +62,7 @@ public class EnemyController : MonoBehaviour
     public void Fix()
     {
         broken = false;
+        audioSource.PlayOneShot(fixedClip);
         rigBody2D.simulated = false;
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
