@@ -55,6 +55,15 @@ public class RubyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C)) {
             Launch();
         }
+        if (Input.GetKeyDown(KeyCode.X)) {
+            RaycastHit2D hit = Physics2D.Raycast(rdbody2D.position+Vector2.up*0.2f,lookDirection,1.5f,LayerMask.GetMask("NPC"));
+            if (hit.collider!=null) {
+               NonPlayerCharacter npc = hit.collider.GetComponent<NonPlayerCharacter>();
+                if (npc!=null) {
+                    npc.DisplayDialog();
+                }
+            }
+        }
         
     }
 
